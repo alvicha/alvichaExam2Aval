@@ -1,6 +1,5 @@
  #!/bin/bash
-lineas=`cat consumos.txt | tail -n+2 | wc -l`
-lineas2=$((lineas-1))
+lineas=`cat consumos.txt | wc -l`
 suma=0;
 
 for i in `seq 1 $lineas`
@@ -13,5 +12,5 @@ do
     fi
 done
 echo "El total es $suma"
-promedio=$((suma/$lineas2))
+promedio=$((suma/$lineas))
 echo "La media del modulo $1 es $promedio"
