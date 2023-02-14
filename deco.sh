@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 lineas=`cat consumos.txt | wc -l`
 suma=0;
 
@@ -14,3 +14,13 @@ done
 echo "El total es $suma"
 promedio=$((suma/$lineas))
 echo "La media del modulo $1 es $promedio"
+
+if [ $promedio -lt 400 ]
+then
+echo "ECO";
+else
+if [ $promedio -gt 400 ]
+then
+echo "NO ECO"
+fi
+fi
