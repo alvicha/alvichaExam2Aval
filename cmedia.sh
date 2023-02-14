@@ -13,4 +13,4 @@ do
 done
 echo "El total es $suma"
 promedio=$((suma/$lineas))
-echo "La media del modulo $1 es $promedio"
+echo "La media de consumos de la ciudad $1 es $promedio"
